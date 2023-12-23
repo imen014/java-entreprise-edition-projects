@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\first\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2800170725.index
+\MyFirstIdea\src\main\java

@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>product deleted</title>
+</head>
+<body>
+<p>product  with id ${productIdSupp} - was deleted succeffully</p>
+<p> ${message}</p>
+
+</body>
+</html>

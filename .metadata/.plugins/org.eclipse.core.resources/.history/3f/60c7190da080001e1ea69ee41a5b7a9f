@@ -1,0 +1,58 @@
+package com.test.servlets;
+
+import java.io.IOException;
+import java.sql.Connection;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bd.connections.ConnectionClass;
+import com.octest.beans.CategorieProduct;
+
+@WebServlet("/CreateCategorieServlet")
+public class CreateCategorieServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    public CreateCategorieServlet() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+
+	this.getServletContext().getRequestDispatcher("/WEB-INF/create_categorie.jsp").forward(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+
+	ConnectionClass connect = new ConnectionClass();
+	Connection connection = connect.open_connection();
+
+	int code_categorie = Integer.parseInt(request.getParameter("code_categorie"));
+	String nom_categorie = request.getParameter("nom_categorie");
+	int quantite_stock = Integer.parseInt(request.getParameter("quantite_stock"));
+
+	CategorieProduct categorie_product = new CategorieProduct(code_categorie, nom_categorie, quantite_stock);
+	boolean isCreated = categorie_product.insert_categorie_product_into_bd(connection);
+
+	if(isCreated) {
+	    message = "catégorie crée avec succés !";
+	    request.setAttribute("message", message);
+	}else {
+	    message = "catégorie non crée !";
+	    request.setAttribute("message", message);
+	    
+	}
+	
+	this.getServletContext().getRequestDispatcher("/WEB-INF/categorie_created.jsp").forward(request, response);
+
+    }
+
+}

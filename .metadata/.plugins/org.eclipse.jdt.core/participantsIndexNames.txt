@@ -1,0 +1,41 @@
+INDEX VERSION 1.134
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3336941288.index
+\lifeleft\src\main\resources
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\354820023.index
+\exercices jee1 hello world\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\39368823.index
+\calculatrice simple\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4166848418.index
+\test_jstl1\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\386038381.index
+\exercices2\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2015404778.index
+\startingWay\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1034224434.index
+\ticket-webapp\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3609110725.index
+\exercices2\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\801554824.index
+\startingWay\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3321566224.index
+\project2\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\567397938.index
+\formulaire_contact\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4028015171.index
+\project1\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2591345706.index
+\myproject_with_db\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\232691148.index
+\conversion_devise\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3155620991.index
+\formulaire exercice2 jee\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1782002830.index
+\exercice3_afficher_liste_noms\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1063757394.index
+\form_demonstration\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1918572075.index
+\Search\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1298516890.index
+\taches\src\main\java
+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3783343116.index
+\sahar.projects_begin\src\main\java

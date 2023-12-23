@@ -1,0 +1,20 @@
+package management.data.bdd;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class CreateProduct {
+    
+    public void create_product(Connection connection, String name_product, int quantity_product) {
+	
+	try {
+	    
+	}catch(SQLException e) {
+	    
+	    System.out.println("echec à cause de : " + e.getMessage());
+	    
+	}
+	
+    }
+
+}

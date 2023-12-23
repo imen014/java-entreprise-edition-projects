@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 20
+Main-Class: com.sahar.entraiment.testing.projects.mes.testesIT.Main
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,44 @@
+package com.test.servlets;
+
+import java.io.IOException;
+import java.sql.Connection;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bd.connections.ConnectionClass;
+
+import management.data.bdd.ShowLeastProducts;
+
+@WebServlet("/ShowProductsLtSeuil")
+public class ShowProductsLtSeuil extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    public ShowProductsLtSeuil() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+
+	this.getServletContext().getRequestDispatcher("/WEB-INF/show_products_lt_seuil_form.jsp").forward(request,
+		response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+
+	ConnectionClass connect = new ConnectionClass();
+	Connection connection = connect.open_connection();
+
+	ShowLeastProducts show_product_lt = new ShowLeastProducts();
+
+    }
+
+}

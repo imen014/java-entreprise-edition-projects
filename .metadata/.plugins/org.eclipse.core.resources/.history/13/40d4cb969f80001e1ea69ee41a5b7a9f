@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="CreateCategorieServlet" method="POST">
+<label for="code_categorie"> Code Categorie </label>
+<input type="text" name="code_categorie" required /> <br/>
+
+<label for="nom_categorie"> Nom Categorie </label>
+<input type="text" name="nom_categorie" required /> <br/>
+
+<label for="quantite_stock">  Quantite stock </label>
+<input type="text" name="quantite_stock" required /> <br/>
+
+<input type="submit" value="Valider" />
+
+
+
+</form>
+
+</body>
+</html>

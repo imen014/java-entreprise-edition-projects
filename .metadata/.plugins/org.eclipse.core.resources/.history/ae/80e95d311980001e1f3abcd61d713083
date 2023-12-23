@@ -1,0 +1,19 @@
+package com.octest.beans;
+
+public class Product {
+
+    int id;
+    String nom_produit;
+    int quantite_stock;
+
+    public Product() {
+	super();
+    }
+
+    public Product(String nom_produit, int quantite_stock) {
+	super();
+	this.nom_produit = nom_produit;
+	this.quantite_stock = quantite_stock;
+    }
+
+}

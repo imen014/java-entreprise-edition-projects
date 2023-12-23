@@ -1,0 +1,40 @@
+package com.filter;
+
+@WebFilter("/restricted/*") // Définir le chemin pour lequel le filtre s'appliquera
+public class RoleFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        // Initiation du filtre
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
+
+        HttpSession session = httpRequest.getSession(false);
+
+        if (session != null && session.getAttribute("email") != null) {
+            // L'utilisateur est connecté, vérifiez son rôle
+            String userRole = (String) session.getAttribute("role");
+
+            if ("Admin".equals(userRole)) {
+                // L'utilisateur a le rôle d'administrateur, continuez la chaîne de filtres
+                chain.doFilter(request, response);
+            } else {
+                // L'utilisateur n'a pas le rôle requis, redirigez-le vers une page d'erreur ou de refus d'accès
+                httpResponse.sendRedirect(httpRequest.getContextPath() + "/access-denied.jsp");
+            }
+        } else {
+            // L'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
+            httpResponse.sendRedirect(httpRequest.getContextPath() + "/login.jsp");
+        }
+    }
+
+    @Override
+    public void destroy() {
+        // Destruction du filtre
+    }
+}

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>get the menu of app</title>
+</head>
+<body>
+<c:url var="addQuantityUrl" value="/AddQuantityServlet" />
+<a href="${addQuantityUrl}">Ajouter produits</a>
+
+<c:url var="CreateAccountUrl" value="/CreateAccountUserServlet" />
+<a href="${CreateAccountUrl}">Créer compte utilisateur</a>
+
+
+<c:url var="CreateProductUrl" value="/CreateProductServlet" />
+<a href="${/CreateProductUrl}">Créer un nouveau produit</a>
+
+<c:url var="DeconnectUserServlet" value="/DeconnectUserServlet" />
+<a href="${DeconnectUserServlet}">Se deconnecter</a>
+
+<c:url var="DeleteProductServlet" value="/DeleteProductServlet" />
+<a href="${DeleteProductServlet}">Supprimer produit</a>
+</body>
+</html>

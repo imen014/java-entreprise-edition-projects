@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Confirmation Creation Product</title>
+</head>
+<body>
+<h1>Product Created with </h1>
+<p>Nom produit ${nom_produit} - Quantité produit ${quantite_stock)}</p>
+<p>${message}</p>
+<p></p>
+
+</body>
+</html>

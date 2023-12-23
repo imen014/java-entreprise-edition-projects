@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Product Form</title>
+</head>
+<body>
+<form action="CreateProductServlet" method="POST">
+
+<label for="nom_produit"> Nom Produit </label>
+<input type="text" name="nom_produit" required />
+
+<label for="quantite_stock"> Quantite Stock </label>
+<input type="text" name="quantite_stock" required />
+
+<label for="price_product"> Prix </label>
+<input type="text" name="price_product" required />
+
+<label for="code_produit"> Code à barre </label>
+<input type="text" name="code_produit" required />
+
+<h2>Categorie_produit</h2>
+
+<label for="code_categorie"> Code Categorie </label>
+<input type="text" name="code_categorie" required />
+
+<label for="quantite_stock"> Quantite stock </label>
+<input type="text" name="quantite_stock" required />
+
+<label for="code_categorie"> Code Categorie </label>
+<input type="text" name="code_categorie" required />
+
+<input type="submit" name="Valider" />
+
+</form>
+
+<c:url var="ConsulterListeUser" value="/StartingWayServlet" />
+<a href="${ConsulterListeUser}">Consulter Liste Utilisateurs</a>
+</body>
+</html>

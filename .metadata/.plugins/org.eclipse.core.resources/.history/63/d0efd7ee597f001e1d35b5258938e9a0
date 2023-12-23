@@ -1,0 +1,10 @@
+package management.data.bdd;
+
+public class CreateProduct {
+    
+    public void create_product(Connection connection, String name_product, int quantity_product) {
+	String monrequete = " insert into products(nom_produit,quantite_stock)VALUES(?,?);";
+	
+    }
+
+}

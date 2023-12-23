@@ -1,0 +1,26 @@
+package management.data.bdd;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class ProductCreator {
+
+    public void create_product(Connection connection, String name_product, int quantity_product) {
+
+	String monrequete = "insert into products(nom_produit,quantite_stock)VALUES(?,?);";
+
+	try {
+	    PreparedStatement preparedStatement = connection.prepareStatement(monrequete);
+	    preparedStatement.setString(1, name_product);
+	    preparedStatement.setInt(2, quantity_product);
+	    preparedStatement.executeUpdate();
+
+	} catch (SQLException e) {
+	    // catch if error
+	    e.printStackTrace();
+	}
+
+    }
+
+}

@@ -1,0 +1,21 @@
+package com.octest.beans;
+
+public class Product {
+
+    private int id;
+    private String nom_produit;
+    private int quantite_stock;
+    private float prix;
+
+    public Product() {
+	super();
+    }
+
+    public Product(String nom_produit, int quantite_stock, float prix) {
+	super();
+	this.nom_produit = nom_produit;
+	this.quantite_stock = quantite_stock;
+	this.prix = prix;
+    }
+
+}

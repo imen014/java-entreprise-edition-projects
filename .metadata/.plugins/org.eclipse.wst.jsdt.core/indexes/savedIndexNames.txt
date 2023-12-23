@@ -1,0 +1,24 @@
+INDEX VERSION 1.4+C:\Users\rezgu\eclipse-workspace\Java EE Projects\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1382416215.index
+2072454031.index
+801554824.index
+3540839101.index
+2233684147.index
+1596524954.index
+4098409615.index
+741615247.index
+896455901.index
+929201520.index
+2209561742.index
+84328580.index
+2166754134.index
+1241889543.index
+1062811136.index
+4079562886.index
+2554266211.index
+1446200300.index
+226335513.index
+3930104163.index
+1628630422.index
+2439870499.index
+3455113681.index

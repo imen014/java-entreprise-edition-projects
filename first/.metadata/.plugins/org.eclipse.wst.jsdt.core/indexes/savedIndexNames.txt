@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+C:\Users\rezgu\eclipse-workspace\Java EE Projects\first\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

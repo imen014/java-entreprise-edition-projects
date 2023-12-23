@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+    
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+    
+    
+     <servlet>
+        <servlet-name>StartingWayServlet</servlet-name>
+        <servlet-class>com.test.servlets.StartingWayServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StartingWayServlet</servlet-name>
+        <url-pattern>/StartingWayServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>RechercheUserNameServlet</servlet-name>
+        <servlet-class>com.test.servlets.RechercheUserNameServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RechercheUserNameServlet</servlet-name>
+        <url-pattern>/RechercheUserNameServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <servlet-class>com.test.servlets.SearchProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchProductServlet</servlet-name>
+        <url-pattern>/SearchProductServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ListerProductsServlet</servlet-name>
+        <servlet-class>com.test.servlets.ListerProductsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListerProductsServlet</servlet-name>
+        <url-pattern>/ListerProductsServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+     <security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Secured Products</web-resource-name>
+       
+   		<url-pattern>/CreateAccountUserServlet</url-pattern>
+ 		<url-pattern>/CreateProductServlet</url-pattern>
+		<url-pattern>/DeleteProductServlet</url-pattern>
+        <url-pattern>/DeleteUserServlet</url-pattern>
+		 <url-pattern>/UpdateUserServlet</url-pattern>
+    
+    </web-resource-collection>
+    <auth-constraint>
+       
+         <role-name>ADMIN</role-name>
+         
+    </auth-constraint>
+</security-constraint>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Secured Products</web-resource-name>
+      	<url-pattern>/AddQuantityServlet</url-pattern>
+      
+      	<url-pattern>/GetMenuServlet</url-pattern>
+		<url-pattern>/ProductsShoudBeBayed</url-pattern>
+		<url-pattern>/RechercheUserNameServlet</url-pattern>
+		<url-pattern>/ReduceQuantityServlet</url-pattern>
+		<url-pattern>/ShowProductsLtSeuil</url-pattern>
+		<url-pattern>/UpdateProductServlet</url-pattern>
+ </web-resource-collection>
+    <auth-constraint>
+       
+         <role-name>ADMIN</role-name>
+         <role-name>Dirigeant</role-name>
+         
+    </auth-constraint>
+</security-constraint>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Secured Products</web-resource-name>
+      	<url-pattern>/DeconnectUserServlet</url-pattern>
+  		<url-pattern>/ListerProductsServlet</url-pattern>
+		<url-pattern>/LoginUserServlet</url-pattern>
+		<url-pattern>/SearchProductServlet</url-pattern>
+		
+		
+		
+</web-resource-collection>
+    <auth-constraint>
+       
+         <role-name>ADMIN</role-name>
+         <role-name>Consultant</role-name>
+         <role-name>Dirigeant</role-name>
+         
+    </auth-constraint>
+</security-constraint>
+
+
+<login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+        <form-login-page>/LoginUserServlet</form-login-page>
+        <form-error-page>/login-error.jsp</form-error-page>
+    </form-login-config>
+</login-config>
+
+<security-role>
+    <role-name>ADMIN</role-name>
+</security-role>
+
+<security-role>
+<role-name>Consultant</role-name>
+</security-role>
+<security-role>
+    <role-name>Dirigeant</role-name>
+</security-role>
+    
+    
+ 
+</web-app>

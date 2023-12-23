@@ -1,0 +1,35 @@
+package com.octest.beans;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.bd.connections.ConnectionClass;
+
+public class UserCreationIntoBdd {
+
+    public void insert_user_intoDB(User user) {
+	ConnectionClass connect = new ConnectionClass();
+	Connection connection = connect.open_connection();
+
+	String monrequete = "Insert into users(username,status,password,email,poste,Role)VALUES(?,?,?,?,?,?)";
+
+	try (PreparedStatement preparedStatement = connection.prepareStatement(monrequete)) {
+
+	    preparedStatement.setString(1, user.getUsername());
+	    preparedStatement.setString(2, user.getStatus());
+	    preparedStatement.setString(3, user.getPassword());
+	    preparedStatement.setString(4, user.getEmail());
+	    preparedStatement.setString(5, user.getPoste());
+	    preparedStatement.setString(6, user.getRole());
+
+	    int rowsAffected = preparedStatement.executeUpdate();
+
+	} catch (SQLException e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	}
+
+    }
+
+}

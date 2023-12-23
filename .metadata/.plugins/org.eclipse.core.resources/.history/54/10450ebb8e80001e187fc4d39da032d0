@@ -1,0 +1,8 @@
+package com.octest.beans;
+
+public class CategorieProduct {
+    private int code_categorie;
+    private String nom_categorie;
+    private int quantite_stock;
+
+}
